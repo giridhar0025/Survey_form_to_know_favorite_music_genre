@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+   <Style>
+     body {
+      font-family: sans-serif;
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+    label {
+      font-size: 18px;
+      display: block;
+      padding-bottom: 10px;
+    }
+    input, textarea, select {
+      display: block;
+      width: 100%;
+      padding-bottom: 8px;
+    }
+    
+    form {
+      background-color: #7FFFD4;
+      padding: 40px 40px 40px 40px;
+      }
+   
+    
+   </Style>
+  
+  
+  </head>
+
+  <body> 
+     <h1 id="title">Tell me your favorite Music genres</h1> 
+       <p id="description"> 
+        This is a survey to know your favorite Music genre
+       </p>
+       <form id="survey-form">
+
+
+          <label id="name-label">Name:</label> 
+          <input type="text" name="name" id="name" required placeholder="First name and Last name"></input><br>
+          <label id="email-label">Email:</label> 
+          <input type="email" name="email" id="email" required placeholder="Present Email address"></input><br>
+          <label id="number-label">Number:</label> 
+          <input type="number" name="number" id="number" min="0" max="10" required placeholder="0-10"></input><br>
+          
+          <label id="genres">Choose Your favorite Music Genre:</label>
+
+          <select id="dropdown" name="genres">
+            <option value="hip-hop">Hip-hop</option>
+            <option value="techno">Techno</option>
+            <option value="psytrance">Psytrance</option>
+            <option value="bollywood">Bollywood</option>
+            <option value="other">Other</option>
+          </select>          
+          <br>
+           <div id="button-area"></div>
+           <label id="gender-label">Gender:</label>
+          <input type="radio"  name="gender" value="male"> Male<br>         
+          <input type="radio" name="gender" value="female"> Female<br>          
+          <input type="radio"  name="gender" value="other"> Other
+            </div>
+          <br>
+           <div id="button-area">
+            <label id="concert-experience">Music concert experience:</label>
+            <input type="checkbox"  name="vehicle1" value="Bike"> once or more than one time<br>           
+            <input type="checkbox"  name="vehicle2" value="Car"> I have been living there<br>            
+            <input type="checkbox"  name="vehicle3" value="Boat"> Have never attended and would like to attend in near future<br>
+           </div> 
+           <label id="additional-comments">Additional comments:</label>
+          <textarea placeholder="Additional comments"></textarea>
+         <input type="submit" id="submit">
+        </form>
+     <script type="text/javascript" scr="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+     
+
+
+
+  </body>
+</html>
